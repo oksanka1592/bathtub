@@ -1,0 +1,12 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #000;
+  @extend %roboto-500;
+}
+.conteiner{
+  margin: 0 auto;
+  width: 1460px;
+  padding: 0 10px;
+}
