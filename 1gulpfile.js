@@ -36,8 +36,7 @@ function styles() {
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
-    // 'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
-    // 'node_modules/jquery-mask-plugin/src/jquery.mask.js',
+    'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
     'docs/js/main.js'
   ])
     .pipe(concat('main.min.js'))
@@ -86,6 +85,7 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.browsersync = browsersync;
 exports.watching = watching;
+// exports.build = build;
 exports.build = series(cleanDist, images, build);
 exports.cleanDist = cleanDist;
 exports.images = images;

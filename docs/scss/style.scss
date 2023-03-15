@@ -10,6 +10,7 @@
   height: 950px;
   background-repeat: no-repeat;
   background-size: cover;
+  min-width: 100%;
 
   &::before {
     content: '';
@@ -134,9 +135,115 @@
       background-image: url('../images/icon/medal.svg');
     }
   }
+ 
 
   &__btn {
     @extend %btn;
+  }
+}
+
+.fixed {
+  position: fixed;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 48, 71, 0.3);
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s;
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:target .popup__body {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  &__area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &__body {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10px;
+    background-color: #EDF9FF;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translate(0, -100%);
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__inner {
+    color: #414141;
+  }
+
+  &__title {
+    font-size: 35px;
+    line-height: 41px;
+    @extend %roboto-700;
+    margin-bottom: 33px;
+  }
+
+  &__text {
+    @extend %roboto-400;
+    font-size: 25px;
+    line-height: 60px;
+  }
+
+  &__form {
+    margin-top: 70px;
+  }
+
+  &__input {
+    background-color: #fff;
+    border: 3px solid #76CEFF;
+    border-radius: 1e+15px;
+    padding: 19px 53px 18px;
+ 
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 23px;
+      text-transform: capitalize;
+      @extend %roboto-500;
+      color: #AEAEAE;
+    }
+
+    &:focus-visible {
+      border: 3px solid rgba(118, 206, 255, 1);
+      border-radius: 1e+15px;
+    }
+  }
+
+  &__btn {
+    @extend %btn;
+    font-size: 20px;
+    line-height: 23px;
+    @extend %roboto-500;
   }
 }
 
@@ -624,6 +731,7 @@
 
 
   .footer-bottom {
+    background-size: cover;
     background-color: #242424;
 
     &__inner {
@@ -650,6 +758,7 @@
 
     &__icon {
       padding-left: 20px;
+
       &:hover {
         svg {
           path {

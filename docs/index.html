@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="conteiner">
       <div class="header__top">
         <a href="index.html" class="header__logo">
@@ -41,12 +41,42 @@
             Гарантия до 3х лет
           </li>
         </ul>
-        <button class="header__btn">Вызов мастера</button>
+        <a class="header__link-btn" href="#checkout">
+          <input class="header__btn" type="button" value="Вызов мастера">
+
+        </a>
       </div>
     </div>
 
   </header>
   <main>
+    <div class="fixed" id="fixed"></div>
+    <div class="popup" id="popup">
+      <a href="#fixed" class="popup__area"></a>
+      <div class="popup__body">
+        <div class="conteiner">
+          <div class="popup__content">
+            <div class="popup__inner">
+              <div class="popup__title">
+                Бесплатная консультация!
+              </div>
+              <div class="popup__text">
+                У вас есть проблемы, не знаете, как их устранить? <br>
+                
+                Закажите обратный звонок. Наши опытные специалист помогут вам
+              </div>
+            </div>
+            <form  class="popup__form" action="#">
+              <input class="popup__input" type="tel" placeholder="+7 ( ___ ) ___ - ____">
+              <a class="popup__link-btn" href="#fixed">
+                <input class="popup__btn" type="button" value="Перезвоните мне">
+              </a>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
     <section class="advantages">
       <div class="conteiner">
         <h2 class="advantages__title">
@@ -90,7 +120,10 @@
               <span class="advantages__item-text">Работаем по москве и мо</span>
             </div>
           </div>
-          <button class="advantages__btn">Заказать звонок</button>
+          <a class="advantages__link-btn" id="advantages__link-btn" href="#popup">
+            <button class="advantages__btn">Заказать звонок</button>
+
+          </a>
         </div>
       </div>
     </section>
@@ -236,7 +269,7 @@
         </div>
       </div>
     </section>
-    <section class="checkout">
+    <section class="checkout" id="checkout">
       <div class="conteiner">
         <h2 class="checkout__title">
           срочный бесплатный выезд
@@ -295,7 +328,7 @@
   <footer class="footer">
     <div class="conteiner">
       <div class="footer-top">
-        <a href="index.html" class="footer__logo">
+        <a class="footer__logo" href="#header" >
           <img class="footer__logo" src="images/logo-big.svg" alt="logo">
         </a>
       </div>
