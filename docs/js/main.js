@@ -79,6 +79,7 @@ function nameMask(name) {
 $(function () {
   $('.services__btn').on('click', function () {
     $('.services__items-max').addClass('services__items-max--active');
+    $('.services__items-min').addClass('services__items-max--disactive');
   });
 
   $('.form-request__btn').on('click', function (e) {
@@ -86,6 +87,12 @@ $(function () {
     $('.form-request').addClass('form-request--none');
     $('.form-next').addClass('form-request--active');
 
+  });
+
+  $('.header__burger').on('click', function (e) {
+    e.preventDefault();
+    $('.header__burger,.header__menu').toggleClass('active');
+    $('body').toggleClass('lock');
   });
 
 });

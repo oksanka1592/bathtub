@@ -17,6 +17,9 @@
         <a href="index.html" class="header__logo">
           <img class="header__logo-img" src="images/logo.svg" alt="logo">
         </a>
+        <div class="header__burger">
+          <span class="header__burger-span"> </span>
+        </div>
         <ul class="header__menu">
           <li class="header__menu-list ">
             <a href="index.html" class="header__menu-link  ">Главная</a>
@@ -28,6 +31,12 @@
         <div class="header__phone">
           <a href="tel:+79670442227" class="header__phone-link">+7 (967) 044-22-27</a>
         </div>
+        <div class="header__phone--min">
+          <a href="tel:+79670442227" class="header__phone-link--min">
+            <img class="header__phone-img" src="images/icon/phone.svg" alt="">
+          </a>
+        </div>
+
       </div>
       <div class="header__inner">
         <h2 class="header__title">НАШИ УСЛУГИ</h2>
@@ -50,7 +59,7 @@
     </div>
 
   </header>
-  <main>
+<main>
     <div class="fixed" id="fixed"></div>
     <div class="popup" id="popup">
       <a href="#fixed" class="popup__area"></a>
@@ -86,39 +95,62 @@
         <div class="advantages__inner">
           <div class="advantages__items">
             <div class="advantages__item">
-              <img class="advantages__img" src="images/icon/1.svg" alt="icon">
-              <span class="advantages__num">1</span>
+              <div class="advantages__picture">
+                <img class="advantages__img" src="images/icon/1.svg" alt="icon">
+                <span class="advantages__num">1</span>
+              </div>
               <span class="advantages__item-text">Выполняем работы <br> в срок</span>
             </div>
             <div class="advantages__item">
-              <img class="advantages__img" src="images/icon/2.svg" alt="icon">
+              <div class="advantages__picture">
+                <img class="advantages__img" src="images/icon/2.svg" alt="icon">
+                <span class="advantages__num">2</span>
+              </div>
               <span class="advantages__item-text">Гарантия на наши работы
                 до 3-х лет</span>
             </div>
             <div class="advantages__item">
-              <img class="advantages__img" src="images/icon/3.svg" alt="icon">
+              <div class="advantages__picture">
+                <img class="advantages__img" src="images/icon/3.svg" alt="icon">
+                <span class="advantages__num">3</span>
+              </div>
               <span class="advantages__item-text">Мастер приедет в любое
                 удобное для вас время</span>
             </div>
             <div class="advantages__item">
-              <img class="advantages__img" src="images/icon/4.svg" alt="icon">
+              <div class="advantages__picture">
+                <img class="advantages__img" src="images/icon/4.svg" alt="icon">
+                <span class="advantages__num">4</span>
+              </div>
               <span class="advantages__item-text">Опыт работ</span>
             </div>
             <div class="advantages__item">
-              <img class="advantages__img" src="images/icon/5.svg" alt="icon">
+              <div class="advantages__picture">
+                <img class="advantages__img" src="images/icon/5.svg" alt="icon">
+                <span class="advantages__num">5</span>
+              </div>
               <span class="advantages__item-text">Низкие цены</span>
             </div>
             <div class="advantages__item">
-              <img class="advantages__img" src="images/icon/6.svg" alt="icon">
+              <div class="advantages__picture">
+                <img class="advantages__img" src="images/icon/6.svg" alt="icon">
+                <span class="advantages__num">6</span>
+              </div>
               <span class="advantages__item-text">Скидки пенсионерам <br> и инвалидам</span>
             </div>
             <div class="advantages__item">
-              <img class="advantages__img" src="images/icon/7.svg" alt="icon">
+              <div class="advantages__picture">
+                <img class="advantages__img" src="images/icon/7.svg" alt="icon">
+                <span class="advantages__num">7</span>
+              </div>
               <span class="advantages__item-text">Акции и скидки
                 от производителей</span>
             </div>
             <div class="advantages__item">
-              <img class="advantages__img" src="images/icon/8.svg" alt="icon">
+              <div class="advantages__picture">
+                <img class="advantages__img" src="images/icon/8.svg" alt="icon">
+                <span class="advantages__num">8</span>
+              </div>
               <span class="advantages__item-text">Работаем по москве и мо</span>
             </div>
           </div>
@@ -129,7 +161,7 @@
         </div>
       </div>
     </section>
-    <section class="services">
+     <section class="services">
       <div class="conteiner">
         <div class="services__title">Услуги</div>
         <div class="services__inner">
@@ -179,6 +211,48 @@
           </div>
           <div class="services__items-max">
             <div class="services__max">
+              <div class="services__item">
+                <img class="services__item-img" src="images/bath.jpg" alt="image">
+                <a class="services__item-btn" href="price.html">
+                  Подробнее
+                </a>
+                <div class="services__item-box">
+                  <p class="services__text">
+                    Установка и ремонт ванн
+                  </p>
+                  <div class="services__price">
+                    от 500 ₽
+                  </div>
+                </div>
+              </div>
+              <div class="services__item">
+                <img class="services__item-img" src="images/akril.jpg" alt="image">
+                <a class="services__item-btn" href="price.html">
+                  Подробнее
+                </a>
+                <div class="services__item-box">
+                  <p class="services__text">
+                    Установка акрилового вкладыша
+                  </p>
+                  <div class="services__price">
+                    от 400 ₽
+                  </div>
+                </div>
+              </div>
+              <div class="services__item">
+                <img class="services__item-img" src="images/gidro.jpg" alt="image">
+                <a class="services__item-btn" href="price.html">
+                  Подробнее
+                </a>
+                <div class="services__item-box">
+                  <p class="services__text">
+                    Установка гидромассажной ванны
+                  </p>
+                  <div class="services__price">
+                    от 400 ₽
+                  </div>
+                </div>
+              </div>
               <div class="services__item">
                 <img class="services__item-img" src="images/bath.jpg" alt="image">
                 <a class="services__item-btn" href="price.html">
@@ -342,7 +416,7 @@
         <div class="footer__item">
           <h5 class="footer__info"> Физический адрес
           </h5>
-          <div class="footer__info-address">Г. Москва Дмитрия Ульянова 18
+          <div class="footer__info-address">Г. Москва Дмитрия Ульянова, 18
           </div>
         </div>
         <div class="footer__item">
@@ -354,7 +428,7 @@
     <div class="footer-bottom">
       <div class="conteiner">
         <div class="footer-bottom__inner">
-          <span></span>
+          
           <div class="footer-bottom__copyright">
             ©Гидросанцентр, 2020
           </div>
@@ -395,7 +469,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> 
 
   <script src="js/main.min.js"></script>
 </body>
