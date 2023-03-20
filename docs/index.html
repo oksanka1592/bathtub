@@ -77,9 +77,9 @@
               </div>
             </div>
             <form class="popup__form" action="#">
-              <input class="popup__input" type="tel" placeholder="+7 ( ___ ) ___ - ____">
+              <input class="popup__input phone" type="tel" placeholder="+7 ( ___ ) ___ - ____">
               <a class="popup__link-btn" href="#fixed">
-                <input class="popup__btn" type="button" value="Перезвоните мне">
+                <input class="popup__btn" type="submit" value="Перезвоните мне">
               </a>
             </form>
           </div>
@@ -163,12 +163,12 @@
     </section>
     <section class="services">
       <div class="conteiner">
-        <div class="services__title" >Услуги</div>
+        <div class="services__title" >Услуги<a name="max"></a></div>
         <div class="services__inner">
           <div class="services__items-min">
             <div class="services__item">
               <img class="services__item-img" src="images/bath.jpg" alt="image">
-              <a class="services__item-btn" href="price.html">
+              <a class="services__item-btn" href="price.html#price">
                 Подробнее
               </a>
               <div class="services__item-box">
@@ -182,7 +182,7 @@
             </div>
             <div class="services__item">
               <img class="services__item-img" src="images/akril.jpg" alt="image">
-              <a class="services__item-btn" href="price.html">
+              <a class="services__item-btn" href="price.html#price">
                 Подробнее
               </a>
               <div class="services__item-box">
@@ -196,7 +196,7 @@
             </div>
             <div class="services__item">
               <img class="services__item-img" src="images/gidro.jpg" alt="image">
-              <a class="services__item-btn" href="price.html">
+              <a class="services__item-btn" href="price.html#price">
                 Подробнее
               </a>
               <div class="services__item-box">
@@ -210,10 +210,10 @@
             </div>
           </div>
           <div class="services__items-max">
-            <div class="services__max">
+            <div class="services__max"> </a>
               <div class="services__item">
                 <img class="services__item-img" src="images/bath.jpg" alt="image">
-                <a class="services__item-btn" href="price.html">
+                <a class="services__item-btn" href="price.html#price">
                   Подробнее
                 </a>
                 <div class="services__item-box">
@@ -227,7 +227,7 @@
               </div>
               <div class="services__item">
                 <img class="services__item-img" src="images/akril.jpg" alt="image">
-                <a class="services__item-btn" href="price.html">
+                <a class="services__item-btn" href="price.html#price">
                   Подробнее
                 </a>
                 <div class="services__item-box">
@@ -241,7 +241,7 @@
               </div>
               <div class="services__item">
                 <img class="services__item-img" src="images/gidro.jpg" alt="image">
-                <a class="services__item-btn" href="price.html">
+                <a class="services__item-btn" href="price.html#price">
                   Подробнее
                 </a>
                 <div class="services__item-box">
@@ -255,7 +255,7 @@
               </div>
               <div class="services__item">
                 <img class="services__item-img" src="images/bath.jpg" alt="image">
-                <a class="services__item-btn" href="price.html">
+                <a class="services__item-btn" href="price.html#price">
                   Подробнее
                 </a>
                 <div class="services__item-box">
@@ -269,7 +269,7 @@
               </div>
               <div class="services__item">
                 <img class="services__item-img" src="images/akril.jpg" alt="image">
-                <a class="services__item-btn" href="price.html">
+                <a class="services__item-btn" href="price.html#price">
                   Подробнее
                 </a>
                 <div class="services__item-box">
@@ -283,7 +283,7 @@
               </div>
               <div class="services__item">
                 <img class="services__item-img" src="images/gidro.jpg" alt="image">
-                <a class="services__item-btn" href="price.html">
+                <a class="services__item-btn" href="price.html#price">
                   Подробнее
                 </a>
                 <div class="services__item-box">
@@ -297,7 +297,7 @@
               </div>
               <div class="services__item">
                 <img class="services__item-img" src="images/bath.jpg" alt="image">
-                <a class="services__item-btn" href="price.html">
+                <a class="services__item-btn" href="price.html#price">
                   Подробнее
                 </a>
                 <div class="services__item-box">
@@ -311,7 +311,7 @@
               </div>
               <div class="services__item">
                 <img class="services__item-img" src="images/akril.jpg" alt="image">
-                <a class="services__item-btn" href="price.html">
+                <a class="services__item-btn" href="price.html#price">
                   Подробнее
                 </a>
                 <div class="services__item-box">
@@ -325,7 +325,7 @@
               </div>
               <div class="services__item">
                 <img class="services__item-img" src="images/gidro.jpg" alt="image">
-                <a class="services__item-btn" href="price.html">
+                <a class="services__item-btn" href="price.html#price">
                   Подробнее
                 </a>
                 <div class="services__item-box">
@@ -339,9 +339,9 @@
               </div>
             </div>
           </div>
-            <button class="services__btn">
-              Посмотреть все
-            </button>
+          <a href="#max">
+            <input class="services__btn" type="button" value="Посмотреть все">
+          </a>
         </div>
       </div>
     </section>
@@ -359,9 +359,9 @@
               <h5 class="form-request__subtitle">
                 Мы свяжемся с вами!
               </h5>
-              <input class="form-request__input name" maxlength="15" type="text" placeholder="Ваше имя">
-              <input class="form-request__input phone" type="tel" placeholder="Номер телефона">
-              <button class="form-request__btn" type="submit" disabled>Заказать звонок</button>
+              <input class="form-request__input name" id="username" maxlength="15" type="text" name="username" onchange="toggleButton()" placeholder="Ваше имя">
+              <input class="form-request__input phone"  id="tel"type="tel" name="tel" onchange="toggleButton()" placeholder="Номер телефона">
+              <button class="form-request__btn button" id="submitButton" type="submit" disabled>Заказать звонок</button>
             </form>
             <div class="checkout__form form-next">
               <h4 class="form-next__title">

@@ -61,8 +61,8 @@
   <main>
     <section class="price">
       <div class="conteiner">
-        <h2 class="price__title">
-          Расценки установки ванн
+        <h2 class="price__title" >
+          Расценки установки ванн <a name="price"></a>
         </h2>
         <table class="price__table">
           <tr class="price__table-tr price__table-title">
@@ -148,7 +148,7 @@
       </div>
 
     </section>
-    <!-- <div class="info">
+   <div class="info">
       <div class="conteiner">
         <h3 class="info__title">
           5 причин
@@ -182,7 +182,7 @@
           <img class="info__img" src="images/man.jpg" alt="photo man">
         </div>
       </div>
-    </div> -->
+    </div>
     <div class="consultation" id="consultation">
       <div class="conteiner">
         <div class="consultation__content">
@@ -196,11 +196,11 @@
               Закажите обратный звонок. Наши опытные специалист помогут вам
             </div>
           </div>
-          <form class="consultation__form" action="#">
-            <input class="consultation__input" type="tel" placeholder="+7 (___) ___-____">
-              <button class="consultation__btn" type="button"> Перезвоните мне</button>
-
-          </form>
+        <form class="consultation__form" action="#">
+          <input class="consultation__input phone" id="consultationTel" type="tel" onchange="toggleButton()"
+            placeholder="+7 (___) ___-____">
+            <input class="consultation__btn button" id="consultationBtn" type="submit" value="Перезвоните мне" disabled>
+        </form>
         </div>
 
       </div>

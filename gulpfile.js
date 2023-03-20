@@ -36,7 +36,7 @@ function styles() {
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
-    // 'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
+    'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
     // 'node_modules/jquery-mask-plugin/src/jquery.mask.js',
     'docs/js/main.js'
   ])

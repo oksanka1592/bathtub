@@ -66,7 +66,7 @@
           <div class="services__items-min">
             <div class="services__item">
               <img class="services__item-img" src="images/bath.jpg" alt="image">
-              <a class="services__item-btn" href="price.html">
+              <a class="services__item-btn" href="price.html#price">
                 Подробнее
               </a>
               <div class="services__item-box">
@@ -80,7 +80,7 @@
             </div>
             <div class="services__item">
               <img class="services__item-img" src="images/akril.jpg" alt="image">
-              <a class="services__item-btn" href="price.html">
+              <a class="services__item-btn" href="price.html#price">
                 Подробнее
               </a>
               <div class="services__item-box">
@@ -94,7 +94,7 @@
             </div>
             <div class="services__item">
               <img class="services__item-img" src="images/gidro.jpg" alt="image">
-              <a class="services__item-btn" href="price.html">
+              <a class="services__item-btn" href="price.html#price">
                 Подробнее
               </a>
               <div class="services__item-box">
@@ -111,7 +111,7 @@
             <div class="services__max">
               <div class="services__item">
                 <img class="services__item-img" src="images/bath.jpg" alt="image">
-                <a class="services__item-btn" href="price.html">
+                <a class="services__item-btn" href="price.html#price">
                   Подробнее
                 </a>
                 <div class="services__item-box">
@@ -125,7 +125,7 @@
               </div>
               <div class="services__item">
                 <img class="services__item-img" src="images/akril.jpg" alt="image">
-                <a class="services__item-btn" href="price.html">
+                <a class="services__item-btn" href="price.html#price">
                   Подробнее
                 </a>
                 <div class="services__item-box">
@@ -139,7 +139,7 @@
               </div>
               <div class="services__item">
                 <img class="services__item-img" src="images/gidro.jpg" alt="image">
-                <a class="services__item-btn" href="price.html">
+                <a class="services__item-btn" href="price.html#price">
                   Подробнее
                 </a>
                 <div class="services__item-box">
@@ -153,7 +153,7 @@
               </div>
               <div class="services__item">
                 <img class="services__item-img" src="images/bath.jpg" alt="image">
-                <a class="services__item-btn" href="price.html">
+                <a class="services__item-btn" href="price.html#price">
                   Подробнее
                 </a>
                 <div class="services__item-box">
@@ -167,7 +167,7 @@
               </div>
               <div class="services__item">
                 <img class="services__item-img" src="images/akril.jpg" alt="image">
-                <a class="services__item-btn" href="price.html">
+                <a class="services__item-btn" href="price.html#price">
                   Подробнее
                 </a>
                 <div class="services__item-box">
@@ -181,7 +181,7 @@
               </div>
               <div class="services__item">
                 <img class="services__item-img" src="images/gidro.jpg" alt="image">
-                <a class="services__item-btn" href="price.html">
+                <a class="services__item-btn" href="price.html#price">
                   Подробнее
                 </a>
                 <div class="services__item-box">
@@ -212,10 +212,10 @@
             </div>
           </div>
           <form class="consultation__form" action="#">
-            <input class="consultation__input" type="tel" placeholder="+7 (___) ___-____">
-            <a class="consultation__link-btn" href="#fixed">
-              <input class="consultation__btn" type="button" value="Перезвоните мне">
-            </a>
+            <input class="consultation__input phone" id="consultationTel" type="tel" onchange="toggleButton()" 
+              placeholder="+7 (___) ___-____">
+              <input class="consultation__btn button" id="consultationBtn" type="submit" value="Перезвоните мне" disabled>
+          
           </form>
         </div>
     
