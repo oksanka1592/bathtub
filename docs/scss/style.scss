@@ -418,16 +418,9 @@
   &__item-img {
     width: 403px;
     height: 400px;
-    object-fit: cover;
     border-radius: 25px;
     margin: 0 auto;
     margin-bottom: 15px;
-    z-index: 2;
-
-    &:hover {
-      background: url(7737.jpg);
-      filter: drop-shadow(0px 2px 50px rgba(0, 0, 0, 0.3));
-    }
   }
 
 
@@ -886,14 +879,12 @@ outline: none;
     width: 250px;
     opacity: 0.8;
 
-    cursor: pointer;
-
-    &:hover {
+  &:not([disabled]):hover {
       opacity: 1;
-
+      cursor: pointer;
     }
 
-    &:active {
+    &:not([disabled]):active {
       background-color: #FFE175;
     }
   }

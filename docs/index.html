@@ -79,7 +79,7 @@
             <form class="popup__form" action="#">
               <input class="popup__input phone" type="tel" placeholder="+7 ( ___ ) ___ - ____">
               <a class="popup__link-btn" href="#fixed">
-                <input class="popup__btn" type="submit" value="Перезвоните мне">
+                <input class="popup__btn button" type="submit" value="Перезвоните мне" disabled>
               </a>
             </form>
           </div>
@@ -359,9 +359,9 @@
               <h5 class="form-request__subtitle">
                 Мы свяжемся с вами!
               </h5>
-              <input class="form-request__input name" id="username" maxlength="15" type="text" name="username" onchange="toggleButton()" placeholder="Ваше имя">
-              <input class="form-request__input phone"  id="tel"type="tel" name="tel" onchange="toggleButton()" placeholder="Номер телефона">
-              <button class="form-request__btn button" id="submitButton" type="submit" disabled>Заказать звонок</button>
+              <input class="form-request__input name" maxlength="15" type="text" name="username" placeholder="Ваше имя">
+              <input class="form-request__input phone" type="tel" name="tel" placeholder="Номер телефона">
+              <button class="form-request__btn button" type="submit" disabled>Заказать звонок</button>
             </form>
             <div class="checkout__form form-next">
               <h4 class="form-next__title">

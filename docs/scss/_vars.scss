@@ -1,42 +1,42 @@
-%roboto-400{
+%roboto-400 {
   font-family: 'Roboto-Regular', sans-serif;
   font-weight: 400;
 }
-
-
 %roboto-500 {
   font-family: 'Roboto-Medium', sans-serif;
   font-weight: 500;
 }
+
 
 %roboto-700 {
   font-family: 'Roboto-Bold', sans-serif;
   font-weight: 700;
 }
 
-%btn{
-  cursor: pointer;
-    color: #fff;
-    background-color: #FFC700;
-    border-radius: 1e+15px;
-    padding: 19px 41px 18px 43px;
-    border: none;
-    opacity: 0.8;
-    text-transform: uppercase;
-    &:hover {
-      opacity: 1;
-    }
-  
-    &:active {
-      background-color: #FFE175;
-    }
+%btn {
+  color: #fff;
+  background-color: #FFC700;
+  border-radius: 1e+15px;
+  padding: 19px 41px 18px 43px;
+  border: none;
+  opacity: 0.8;
+  text-transform: uppercase;
+
+  &:not([disabled]):hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  &:not([disabled]):active {
+    background-color: #FFE175;
+  }
 }
 
-%title{
+%title {
   @extend %roboto-700;
-    font-size: 50px;
-    line-height: 59px;
-    margin-bottom: 60px;
-    text-align: center;
-    text-transform: uppercase;
+  font-size: 50px;
+  line-height: 59px;
+  margin-bottom: 60px;
+  text-align: center;
+  text-transform: uppercase;
 }

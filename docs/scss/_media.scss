@@ -316,6 +316,11 @@
 
     }
   }
+  .info{
+    &__img{
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 576px) {
