@@ -107,11 +107,11 @@
 
 @media (max-width: 900px) {
   .header {
-   
+
     &__phone {
       position: absolute;
-        top: 63px;
-        right: 0;
+      top: 63px;
+      right: 0;
     }
 
     &__top::after {
@@ -164,6 +164,12 @@
       grid-template-columns: repeat(1, 1fr);
     }
   }
+
+  .info {
+    &__img {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -177,15 +183,17 @@
       width: 0;
       height: 0;
     }
-        &__phone {
-         display: none;
-        }
-         &__phone--min {
-          display: block;
-          position: absolute;
-          right: 0;
-          top: 70px;
-         }
+
+    &__phone {
+      display: none;
+    }
+
+    &__phone--min {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 70px;
+    }
 
     &__top {
       margin-bottom: 108px;
@@ -228,7 +236,7 @@
       background-color: #f0eef1;
       width: 100%;
       height: 50%;
-      
+
     }
 
     &__menu.active {
@@ -249,7 +257,8 @@
       font-size: 30px;
 
     }
-    &__inner{
+
+    &__inner {
       margin-bottom: 100px;
     }
   }
@@ -283,7 +292,8 @@
     }
   }
 
-  .form-request {
+  .form-request,
+  .form-next {
 
     margin-left: auto;
     margin-right: auto;
@@ -296,13 +306,15 @@
 
   .price {
     margin-bottom: 60px;
-    &__title{
+
+    &__title {
       &__title {
-          font-size: 44px;
-              line-height: 48px;
-          margin-bottom: 48px;
-        }
+        font-size: 44px;
+        line-height: 48px;
+        margin-bottom: 48px;
+      }
     }
+
     &__table {
       font-size: 18px;
       line-height: 20px;
@@ -316,18 +328,31 @@
 
     }
   }
-  .info{
-    &__img{
-      display: none;
+
+  .info {
+    margin-bottom: 60px;
+
+    &__inner {
+      margin-left: 25px;
+    }
+
+    &__item {
+      margin-bottom: 40px;
+    }
+
+    &__subtitle {
+      font-size: 42px;
+      line-height: 49px;
     }
   }
+
 }
 
 @media (max-width: 576px) {
   .header {
 
     &__phone--min {
-    margin-right: 0;
+      margin-right: 0;
       margin-top: 0px;
       margin-left: auto;
     }
@@ -352,6 +377,25 @@
       }
     }
 
+  }
+
+  .info {
+    margin-bottom: 40px;
+
+    &__title {
+      font-size: 40px;
+      line-height: 55px;
+    }
+
+    &__subtitle {
+      font-size: 25px;
+      margin-bottom: 35px;
+    }
+
+    &__item {
+      padding-left: 70px;
+      margin-bottom: 30px;
+    }
   }
 
   .advantages {
@@ -397,6 +441,11 @@
     }
   }
 
+  .form-next {
+    padding: 143px 20px;
+
+  }
+
   .footer {
     &__logo {
       margin: 35px auto 55px;
@@ -413,6 +462,19 @@
   }
 
   .footer {
+    &__logo{
+      margin: 25px auto 30px;
+    }
+    &__item {
+      font-size: 16px;
+      line-height: 20px;
+      margin: 0 15px 20px;
+    }
+
+    &__inner {
+      margin-bottom: 0;
+    }
+
     .footer-bottom {
       &__copyright {
         font-size: 18px;
@@ -420,7 +482,18 @@
       }
 
       &__inner {
-        padding: 24px 0 8px;
+        padding: 18px 0 8px;
+
+      }
+      &__copyright {
+        font-size: 15px;
+        margin-bottom: 14px;
+      }
+      &__icon{
+        margin-right: 5px;
+        svg{
+         height: 25px;
+        }
       }
     }
 
@@ -429,7 +502,7 @@
   .price {
     &__title {
       font-size: 30px;
-          line-height: 40px;
+      line-height: 40px;
       margin-bottom: 30px;
     }
 
@@ -444,10 +517,12 @@
   .header {
     height: auto;
     margin-bottom: 40px;
-    &__top{
+
+    &__top {
       display: block;
       margin-bottom: 50px;
     }
+
     &__title {
       font-size: 34px;
       line-height: 33px;
@@ -459,8 +534,8 @@
       margin-bottom: 30px;
       font-size: 21px;
     }
-   
-    &__inner{
+
+    &__inner {
       margin-bottom: 100px;
     }
   }
@@ -540,7 +615,8 @@
   }
 
   .form-request {
-    height: auto;
+    height: 400px;
+    padding: 35px 30px 38px 30px;
 
     &__title {
       font-size: 30px;
@@ -548,11 +624,16 @@
 
     &__subtitle {
       font-size: 18px;
+      margin-bottom: 10px;
     }
 
     &__btn {
       margin: 15px auto 0;
       padding: 10px 15px 10px 15px;
     }
+  }
+
+  .form-next {
+    height: 400px;
   }
 }
